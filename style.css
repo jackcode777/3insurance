@@ -30,7 +30,7 @@ p {
 }
 @media screen and (min-width: 600px) {
   body {
-    background:lightblue;
+    background:white;
   }
   main {
     display:flex;
