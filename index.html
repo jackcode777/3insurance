@@ -14,17 +14,20 @@
       <label for="input">Declared value in (RM):</label>
       </strong>
       <br>
-      <input type="number" id="input" placeholder="Enter" required>
+      <input type="number" id="input" placeholder="0.00" required>
+      <br>
+      <label for="courier">Courier fee (RM):</label>
+      <input type="number" id="courier" placeholder="Optional">
       <div id="error"></div>
-      <br>
-      <br>
-      <button id="btn">Check</button>
+      <button id="btn">Check</button> 
     </section>
-    <br>
-    <br>
-    <br>
     <section class="output">
-     <div class="container"><strong><p id="op">RM 0.00</p></strong></div>
+     <div class="container">
+        <strong><label>Total Amount:</label></div></strong>
+        <p id="op">RM 0.00</p><br>
+        <label>Insurance Amount:</label>
+        <p id="insurance">RM 0.00</p>
+     </div>
     </section>
   </main>
   <script src="script.js"></script>
