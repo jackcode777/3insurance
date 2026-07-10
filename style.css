@@ -1,60 +1,52 @@
+#error {color:red;}
 body {margin:0;}
-input, button {
-box-sizing:border-box;
-width:400px;  
-padding:10px;  
-}
-
-.output {
-box-sizing:border-box;
-width:400px;
-padding:50px;
-box-shadow:0 5px 15px #ccc;  
-}
-
 main {
-display:flex;  
-flex-direction: row;
-align-items: center;
-justify-content: center;  
-padding:5px 5px 100px 5px;  
-background:white;  
-width:720px;
-height:auto;  
-margin:32px auto;  
-box-shadow:0 15px 15px 0 black;  
+margin:32px auto;
+max-width:800px;
 }
-input, button, .output {
-font-size:130%;
-padding:18px;
-border-radius:10px;  
+p, input, button {
+box-sizing: border-box;
+border-radius: 10px;
+width:400px;
+padding:15px;
 }
-@media screen and (max-width: 720px) {
-  main {
-    display:flex;
-    flex-direction: column;
-  }
-  body {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    background:lightskyblue;
-  }
+button {
+margin-top:30px;
+}
+label {
+  font-size:large;
+  border:none;
+}
+.input {
+  padding:10px;
+  border:none;
+}
+.output {
+  padding:10px;
+}
+p {
+  margin:0;
+  border:1px solid gray;
 }
 @media screen and (min-width: 600px) {
   body {
-    background:skyblue;
+    background:lightblue;
   }
   main {
-    padding-bottom: 300px;
+    display:flex;
+    flex-direction:row;
   }
-  .output, button, input {
-    width: 300px;
-    padding:15px;
-  }
-  .input, .output {
-    width:100%;
-  }
-  .output {border-radius:10px;}
 }
-#error {color:red;}
+@media screen and (max-width:800px) {
+  body {
+    background:lightgray;
+  }
+  main {
+    display: flex;
+    flex-direction:column;
+  }
+  .output {
+    margin-top:40px;
+  }
+}
+labe
